@@ -34,7 +34,6 @@ array_map(
 	},
 	[
 		'functions-assets',
-		'functions-filters',
 		'functions-svg',
 		'functions-setup',
 	]
