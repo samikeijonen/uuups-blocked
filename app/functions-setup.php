@@ -214,3 +214,15 @@ add_action(
 	},
 	5
 );
+
+/**
+ * Include a skip to content link at the top of the page so that users can bypass the header.
+ *
+ * @since  1.0.0
+ * @access public
+ * @return void
+ */
+function skip_link() {
+	echo '<a class="skip-link screen-reader-text" href="#main">' . esc_html__( 'Skip to the content', 'uuups-blocked' ) . '</a>';
+}
+add_action( 'wp_body_open', __NAMESPACE__ . '\skip_link', 0 );
