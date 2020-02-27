@@ -1,0 +1,25 @@
+.entry-content,
+.flow-spacing {
+	--flow-space: var(--spacing-unit-4x);
+}
+
+.entry-content > * + *,
+.wp-block-group__inner-container > * + *,
+.wp-block-cover__inner-container > * + *,
+.flow-spacing > * + * {
+	margin-bottom: 0;
+	margin-top: var(--flow-space);
+}
+
+.entry-content > h2,
+.entry-content > h3 {
+	--flow-space: calc(var(--spacing-unit-4x) * 2);
+}
+
+.entry-content > h2 + p,
+.entry-content > h3 + p,
+.entry-content > h4 + p,
+.entry-content > h5 + p,
+.entry-content > h6 + p {
+	--flow-space: var(--spacing-unit-3x);
+}

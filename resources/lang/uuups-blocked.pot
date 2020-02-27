@@ -1,0 +1,118 @@
+# <!=Copyright (C) 2020 Sami Keijonen
+# This file is distributed under the GNU General Public License v2.0 or later.=!>
+msgid ""
+msgstr ""
+"Project-Id-Version: Uuups Blocked 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/uuups-blocked\n"
+"POT-Creation-Date: 2020-02-26 20:17:52+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2020-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"X-Generator: node-wp-i18n 1.2.3\n"
+
+#: app/bootstrap-compat.php:32
+#. translators: %1$s is supported WordPress version, and %2$s is WordPress
+#. version used.
+msgid ""
+"Theme requires at least WordPress version %1$s. You are running version "
+"%2$s. Please upgrade and try again."
+msgstr ""
+
+#: app/bootstrap-compat.php:41
+#. translators: %1$s is supported PHP version, and %2$s is PHP version used.
+msgid ""
+"Theme requires at least PHP version %1$s. You are running version %2$s. "
+"Please upgrade and try again."
+msgstr ""
+
+#: app/functions-filters.php:63
+#. translators: %s: Name of current post
+msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr ""
+
+#: app/functions-setup.php:66
+msgid "Main"
+msgstr ""
+
+#: app/functions-setup.php:71
+msgid "Dark"
+msgstr ""
+
+#: app/functions-setup.php:76
+msgid "White"
+msgstr ""
+
+#: app/functions-setup.php:81
+msgid "Light"
+msgstr ""
+
+#: app/functions-setup.php:86
+msgid "Grey"
+msgstr ""
+
+#: app/functions-setup.php:104
+msgid "Small"
+msgstr ""
+
+#: app/functions-setup.php:109
+msgid "Medium"
+msgstr ""
+
+#: app/functions-setup.php:114
+msgid "Large"
+msgstr ""
+
+#: app/functions-setup.php:119
+msgid "Larger"
+msgstr ""
+
+#: app/functions-svg.php:27
+msgid "Please define default parameters in the form of an array."
+msgstr ""
+
+#: app/functions-svg.php:32
+msgid "Please define an SVG icon filename."
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "Uuups Blocked"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "https://github.com/samikeijonen/uuups-blockedblocked"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "A WordPress starter theme."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Sami Keijonen"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://foxland.fi"
+msgstr ""
+
+#: app/functions-setup.php:165
+msgctxt "nav menu location"
+msgid "Primary"
+msgstr ""
+
+#: app/functions-setup.php:166
+msgctxt "nav menu location"
+msgid "Social Links"
+msgstr ""
+
+#: app/functions-setup.php:211
+msgctxt "sidebar"
+msgid "Primary"
+msgstr ""
+
+#: app/functions-template.php:26
+msgctxt "meta separator"
+msgid "&middot;"
+msgstr ""

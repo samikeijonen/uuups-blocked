@@ -1,0 +1,96 @@
+{
+	"name": "uuups-blocked",
+	"version": "1.2.0",
+	"description": "A WordPress starter theme.",
+	"author": "Sami Keijonen",
+	"license": "GPL-2.0+",
+	"homepage": "https://github.com/samikeijonen/uuups-blockedblocked#readme",
+	"main": "assets/js/app.js",
+	"scripts": {
+		"build": "npm run prod && npm run i18n",
+		"dev": "cross-env NODE_ENV=development webpack --config config/webpack.dev.js",
+		"i18n": "npm run i18n:textdomain && npm run i18n:pot",
+		"i18n:textdomain": "npx wpi18n addtextdomain --exclude=vendor,node_modules",
+		"i18n:pot": "npx wpi18n makepot",
+		"lint": "npm run lint:css && npm run lint:js && npm run lint:php",
+		"lint:css": "cross-env stylelint './assets/css/**/*.css'",
+		"lint:js": "cross-env eslint './assets/js/**/*.js'",
+		"lint:php": "cross-env ./vendor/bin/phpcs .",
+		"prod": "cross-env NODE_ENV=production webpack --config config/webpack.prod.js",
+		"release": "cross-env node config/webpack.release.js",
+		"rename": "theme-claim",
+		"watch": "cross-env NODE_ENV=development webpack --watch --config config/webpack.dev.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/samikeijonen/uuups-blockedblocked.git"
+	},
+	"bugs": {
+		"url": "https://github.com/samikeijonen/uuups-blockedblocked/issues"
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "lint-staged"
+		}
+	},
+	"lint-staged": {
+		"*.js": [
+			"eslint"
+		],
+		"*.css": [
+			"stylelint"
+		],
+		"*.php": [
+			"./vendor/bin/phpcs --warning-severity=8"
+		]
+	},
+	"devDependencies": {
+		"@babel/core": "^7.8.4",
+		"@babel/preset-env": "^7.8.4",
+		"@foxland/stylelint-config": "^1.2.0",
+		"@wordpress/browserslist-config": "^2.6.0",
+		"@wordpress/eslint-plugin": "^4.0.0",
+		"archiver": "^3.1.1",
+		"babel-loader": "^8.0.6",
+		"browser-sync": "^2.26.7",
+		"browser-sync-webpack-plugin": "^2.2.2",
+		"cache-loader": "^4.1.0",
+		"clean-webpack-plugin": "^3.0.0",
+		"copy-webpack-plugin": "^5.1.1",
+		"cross-env": "^7.0.0",
+		"css-loader": "^3.4.2",
+		"cssnano": "^4.1.10",
+		"eslint": "^6.8.0",
+		"friendly-errors-webpack-plugin": "^1.7.0",
+		"fs-extra": "^8.1.0",
+		"glob": "^7.1.6",
+		"husky": "^4.2.3",
+		"imagemin-mozjpeg": "^8.0.0",
+		"imagemin-webpack-plugin": "^2.4.2",
+		"lint-staged": "^10.0.8",
+		"mini-css-extract-plugin": "^0.9.0",
+		"minimist": "^1.2.0",
+		"node-wp-i18n": "^1.2.3",
+		"pa11y": "^5.3.0",
+		"postcss-editor-styles": "^0.3.0",
+		"postcss-import": "^12.0.1",
+		"postcss-loader": "^3.0.0",
+		"postcss-mixins": "^6.2.3",
+		"postcss-nested": "^4.2.1",
+		"postcss-preset-env": "^6.7.0",
+		"rimraf": "^3.0.2",
+		"terser-webpack-plugin": "^2.3.5",
+		"theme-claim": "^0.2.0",
+		"webpack": "^4.41.6",
+		"webpack-cli": "^3.3.11",
+		"webpack-fix-style-only-entries": "^0.4.0",
+		"webpack-manifest-plugin": "^2.2.0",
+		"webpack-merge": "^4.2.2"
+	},
+	"dependencies": {
+		"normalize.css": "^8.0.1"
+	},
+	"browserslist": [
+		"extends @wordpress/browserslist-config"
+	]
+}

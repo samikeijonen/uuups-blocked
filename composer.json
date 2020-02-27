@@ -1,0 +1,27 @@
+{
+	"name": "samikeijonen/uuupsblocked",
+	"type": "wordpress-theme",
+	"description" : "A WordPress starter theme.",
+	"keywords": ["wordpress"],
+	"homepage": "https://github.com/samikeijonen/uuups-blockedblocked",
+	"license": "GPL-2.0-or-later",
+	"authors": [
+		{
+			"name": "Sami Keijonen",
+			"email": "sami.keijonen@foxnet.fi",
+			"homepage": "https://foxland.fi"
+		}
+	],
+	"autoload"    : {
+		"psr-4" : {
+			"UuupsBlocked\\" : "app/"
+		}
+	},
+	"require": {
+		"php": ">=5.6",
+		"composer/installers": "~1.0"
+	},
+	"require-dev": {
+		"samikeijonen/phpcs-composer": "dev-master"
+	}
+}

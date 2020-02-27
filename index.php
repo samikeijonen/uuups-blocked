@@ -1,0 +1,2 @@
+<?php
+/* Can be empty. */

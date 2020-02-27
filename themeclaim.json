@@ -1,0 +1,18 @@
+{
+  "from": {
+    "Name": "Uuups",
+    "Description": "A WordPress starter theme.",
+    "Uri": "https://github.com/samikeijonen/uuups",
+    "Author": "Sami Keijonen",
+    "AuthorEmail": "sami.keijonen@foxnet.fi",
+    "AuthorUri": "https://foxland.fi"
+  },
+  "to": {
+    "Name": "Uuups Blocked",
+    "Description": "A WordPress starter theme.",
+    "Uri": "https://github.com/samikeijonen/uuups-blocked",
+    "Author": "Sami Keijonen",
+    "AuthorEmail": "sami.keijonen@foxnet.fi",
+    "AuthorUri": "https://foxland.fi"
+  }
+}
